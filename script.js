@@ -7,13 +7,6 @@ let stop = document.getElementById('Stop');
 let nulled = document.getElementById('nulled');
 let cheel = document.getElementById('cheel');
 let timer;
-
-//Audio;
-let voice_start = new Audio;
-let voice_end = new Audio();
-let voice_go = new Audio();
-
-
 //
 
 //Таймер:
@@ -81,20 +74,3 @@ cheel.addEventListener('click',  () => {
         Timer();
     }, 60000);
 });
-
-//Реакция на бездействие пользователя
-
-
-
-let NotAction; //переменная, хранящая значение таймера;
-
-//Неккоректная функция;
-//
-// document.addEventListener('mousemove', ()=>{
-//     clearTimeout(NotAction); //Болванка
-//     NotAction = setTimeout(()=>{
-//         //Запускаю музыку:
-//         voice_go.src = 'aggresive.ogg';
-//         voice_go.play();
-//     },)
-// });
